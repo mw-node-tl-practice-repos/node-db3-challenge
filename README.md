@@ -1,5 +1,7 @@
 # Multi-Table Queries and Database Helpers
 
+Some advice: Listen to some relaxing music while you code!
+
 ## Topics
 
 - Joins
