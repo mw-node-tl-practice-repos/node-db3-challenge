@@ -42,7 +42,8 @@ router.get('/:id/steps', (req, res) => {
     }
   })
   .catch(err => {
-    res.status(500).json({ message: 'Failed to get steps' });
+    console.log(err)
+    res.status(500).json({ message: 'Failed to get steps', err });
   });
 });
 
@@ -103,6 +104,7 @@ router.delete('/:id', (req, res) => {
 
   Schemes.remove(id)
   .then(deleted => {
+    console.log(deleted)
     if (deleted) {
       res.json({ removed: deleted });
     } else {
